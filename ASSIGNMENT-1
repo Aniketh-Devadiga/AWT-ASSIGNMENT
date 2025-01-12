@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyFly - Airplane Booking System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    
+    <header class="bg-blue-600 text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">SkyFly</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#flights" class="hover:text-blue-300">Flights</a></li>
+                    <li><a href="#pricing" class="hover:text-blue-300">Pricing</a></li>
+                    <li><a href="#about" class="hover:text-blue-300">About Us</a></li>
+                    <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section class="hero bg-blue-700 text-white text-center py-32">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-4">Book Your Flight with Ease</h2>
+            <p class="text-lg mb-8">Explore destinations around the world at the best prices. Fast, simple, and secure bookings with SkyFly!</p>
+            <a href="#flights" class="bg-yellow-500 text-black px-6 py-3 rounded-md text-lg hover:bg-yellow-600 transition">Find Flights</a>
+        </div>
+    </section>
+
+    
+    <section id="flights" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-semibold text-blue-600">Search for Flights</h2>
+            <div class="mt-8 max-w-lg mx-auto">
+                <form class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <input type="text" placeholder="From" class="p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <input type="text" placeholder="To" class="p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <input type="date" placeholder="Departure Date" class="p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <button type="submit" class="col-span-1 md:col-span-3 bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition">Search Flights</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="pricing" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-semibold text-blue-600">Flight Pricing</h2>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-600">Economy Class</h3>
+                    <p class="text-gray-700 mt-4">₹14,999 - ₹39,999 per ticket</p>
+                    <ul class="text-gray-700 mt-4 list-disc list-inside">
+                        <li>Complimentary snacks</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Flexible seating options</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-600">Business Class</h3>
+                    <p class="text-gray-700 mt-4">₹49,999 - ₹99,999 per ticket</p>
+                    <ul class="text-gray-700 mt-4 list-disc list-inside">
+                        <li>Priority boarding</li>
+                        <li>More legroom</li>
+                        <li>Premium meals and drinks</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-600">First Class</h3>
+                    <p class="text-gray-700 mt-4">₹1,50,000+ per ticket</p>
+                    <ul class="text-gray-700 mt-4 list-disc list-inside">
+                        <li>Private lounge access</li>
+                        <li>Exclusive entertainment</li>
+                        <li>5-star meal experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-semibold text-blue-600">About Us</h2>
+            <p class="text-gray-700 mt-4 text-lg max-w-2xl mx-auto">
+                SkyFly is your trusted partner in air travel in India. With a wide network of airlines and destinations, we provide affordable, convenient, and seamless flight booking experiences. We prioritize customer satisfaction and ensure your journey is smooth from start to finish.
+            </p>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-semibold text-blue-600">Contact Us</h2>
+            <p class="text-gray-700 mt-4 text-lg max-w-2xl mx-auto">Have questions or need assistance with your booking? Reach out to us anytime!</p>
+            <form class="mt-8 max-w-lg mx-auto">
+                <input type="text" placeholder="Your Name" class="w-full p-4 mb-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                <input type="email" placeholder="Your Email" class="w-full p-4 mb-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                <textarea placeholder="Your Message" class="w-full p-4 mb-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600" rows="5" required></textarea>
+                <button type="submit" class="w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">© 2025 SkyFly. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
